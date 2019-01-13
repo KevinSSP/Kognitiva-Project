@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - KognitivaSuite</title>
+    <title>@ViewData["Title"] - Kognitiva</title>
 
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
@@ -17,7 +17,7 @@
     </environment>
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: azure">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -26,13 +26,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-page="/Index" class="navbar-brand">KognitivaSuite</a>
+                <img asp-page="/Index" src="images/logo.png" height="80" width="200"/>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a asp-page="/Index">Home</a></li>
-                    <li><a asp-page="/About">About</a></li>
-                    <li><a asp-page="/Contact">Contact</a></li>
+                    <li><a asp-page="/About">Acerca de</a></li>
+                    <li><a asp-page="/Contact">Tutoriales</a></li>
+                    <li><a asp-page="/Contact" style="display: none">Cognitive Services</a></li>
+                    <li><a asp-page="/Contact" style="display: none">Bots</a></li>
+                    <li><a asp-page="/Contact" style="display: none">Machine Learning</a></li>
                 </ul>
                 <partial name="_LoginPartial" />
             </div>
@@ -45,7 +48,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; 2019 - KognitivaSuite</p>
+            <p>&copy; 2019 - Kognitiva</p>
         </footer>
     </div>
 
