@@ -8,7 +8,7 @@
 
 @if (showBanner)
 {
-    <nav id="cookieConsent" class="navbar navbar-default navbar-fixed-top" role="alert">
+    <nav id="cookieConsent" class="navbar navbar-default navbar-fixed-bottom" role="alert">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#cookieConsent .navbar-collapse">
@@ -21,11 +21,11 @@
             </div>
             <div class="collapse navbar-collapse">
                 <p class="navbar-text">
-                    Use this space to summarize your privacy and cookie use policy.
+                  En este portal utilizamos "cookies" propias y de terceros para gestionar el portal, elaborar información estadística, optimizar la funcionalidad del sitio. Puede obtener más información en el boton "Leer más"
                 </p>
                 <div class="navbar-right">
-                    <a asp-page="/Privacy" class="btn btn-info navbar-btn">Learn More</a>
-                    <button type="button" class="btn btn-default navbar-btn" data-cookie-string="@cookieString">Accept</button>
+                    <a asp-page="/Privacy" class="btn btn-info navbar-btn">Leer más</a>
+                    <button type="button" class="btn btn-default navbar-btn" data-cookie-string="@cookieString">Aceptar</button>
                 </div>
             </div>
         </div>
